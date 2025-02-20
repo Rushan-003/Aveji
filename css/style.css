@@ -1,10 +1,44 @@
+/* @font-face {
+    font-family: "Helvetica";
+    src: url();
+} */
+
 :root {
     --font-family: "Roboto", sans-serif;
     --second-family: "Helvetica", sans-serif;
   }
 
 body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #212529;
+}
 
+h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+h2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 a {
@@ -45,6 +79,7 @@ footer {
 .left_header {
     display: flex;
     align-items: baseline;
+    gap: 200px;
 }
 
 .order {
@@ -57,4 +92,35 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+.footer_contact {
+    display: flex;
+    gap: 40px;
+}
+
+.section_1 {
+    display: flex;
+}
+
+.section_2 {
+    display: flex;
+}
+
+.install {
+    display: flex;
+    gap: 8px;
+}
+
+#button_1 {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+#button_2 {
+    background: #212529;
+    padding: 12px 20px;
+    color: white;
 }
